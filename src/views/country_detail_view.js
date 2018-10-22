@@ -31,6 +31,10 @@ CountryDetailView.prototype.createCountryDetail = function (country) {
   const currencies= this.createDetailListItem('Currency', country.currencies[0].name);
   detailsList.appendChild(currencies);
 
+  // const langauges= this.createDetailListItem('Languages', country.languages[0].['name']);
+  // detailsList.appendChild(languages);
+
+
   countryDetail.appendChild(detailsList);
   return countryDetail;
 };

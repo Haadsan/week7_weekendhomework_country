@@ -4,9 +4,9 @@ const Countries = require('./models/countries.js');
 
 
 document.addEventListener('DOMContentLoaded', () => {
-// const selectElement = document.querySelector('#region-select');
-//   const countryView = new CountryView(selectElement);
-//   countryView.bindEvents();
+const selectElement = document.querySelector('#region-select');
+  const countryView = new CountryView(selectElement);
+  countryView.bindEvents();
 
  const listContainer = document.querySelector('#country_list');
  const countryListView = new CountryListView(listContainer);
